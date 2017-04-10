@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_gauge_counts">
+    <sys_gauge_counts action="INSERT_OR_UPDATE">
+        <gauge_id display_value="Mainrainence Count">c390470cdb82b200bb8f711ebf961963</gauge_id>
+        <image/>
+        <name>Open Maintainence Tasks</name>
+        <omit_line>false</omit_line>
+        <order>10</order>
+        <override_style/>
+        <query table="x_111176_hotel_maintainence">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </query>
+        <script/>
+        <short_description>How Many maintainence tasks still needs to be closed</short_description>
+        <sys_class_name>sys_gauge_counts</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-06 06:13:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6011c70cdb82b200bb8f711ebf96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Maintainence Tasks</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_gauge_counts_6011c70cdb82b200bb8f711ebf96199f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-06 06:13:00</sys_updated_on>
+        <tablename>x_111176_hotel_maintainence</tablename>
+        <use_script>false</use_script>
+    </sys_gauge_counts>
+</record_update>

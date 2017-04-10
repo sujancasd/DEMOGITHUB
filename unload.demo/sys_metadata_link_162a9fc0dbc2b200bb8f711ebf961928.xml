@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>a14c88c6dfb0010068c37a0d3df263d3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_portal">
+    <sys_portal action="INSERT_OR_UPDATE">
+        <dropzone>dropzone999</dropzone>
+        <offset>0</offset>
+        <page display_value="Desired State Overview">dbea84c6dfb0010068c37a0d3df263ec</page>
+        <summary/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2013-04-18 21:33:11</sys_created_on>
+        <sys_id>a14c88c6dfb0010068c37a0d3df263d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2013-04-18 21:33:11</sys_updated_on>
+    </sys_portal>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-06 08:01:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>162a9fc0dbc2b200bb8f711ebf961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 04-18-2013 14:33:11</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_metadata_link_162a9fc0dbc2b200bb8f711ebf961928</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-06 08:01:26</sys_updated_on>
+        <tablename>sys_portal</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<p>Hi There ,</p>
+<p>Testquick message</p>]]></body>
+        <group/>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-05 08:41:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>936992b7dbbd7200bb8f711ebf961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hello Swapna</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_email_canned_message_936992b7dbbd7200bb8f711ebf961901</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-05 08:41:10</sys_updated_on>
+        <title>Hello Swapna</title>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+    </sys_email_canned_message>
+</record_update>

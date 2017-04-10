@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_parameters">
+    <sys_soap_message_parameters action="INSERT_OR_UPDATE">
+        <name>number</name>
+        <soap_function display_value="create">46a25fbcdb4eb200bb8f711ebf961971</soap_function>
+        <sys_class_name>sys_soap_message_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-08 15:30:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e7c317b0dbceb200bb8f711ebf9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>number</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_soap_message_parameters_e7c317b0dbceb200bb8f711ebf9619f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-08 15:30:23</sys_updated_on>
+        <type>string</type>
+        <value>MAI0001024</value>
+    </sys_soap_message_parameters>
+</record_update>

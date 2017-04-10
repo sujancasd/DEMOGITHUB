@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_filter_option_dynamic">
+    <sys_filter_option_dynamic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for_default>false</available_for_default>
+        <available_for_filter>true</available_for_filter>
+        <available_for_ref_qual>false</available_for_ref_qual>
+        <field_type display_value="Reference">52a227c1bf3320001875647fcf07396a</field_type>
+        <label>Me</label>
+        <order/>
+        <roles/>
+        <script>gs.getUserID()</script>
+        <script_reference_id/>
+        <script_reference_table/>
+        <sys_class_name>sys_filter_option_dynamic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-26 03:19:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a8ef6d60db753200bb8f711ebf9619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Me</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_filter_option_dynamic_a8ef6d60db753200bb8f711ebf9619e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-26 03:19:05</sys_updated_on>
+        <table>x_111176_hotel_guest</table>
+        <table_containing_filter/>
+    </sys_filter_option_dynamic>
+</record_update>

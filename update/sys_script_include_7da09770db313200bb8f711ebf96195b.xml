@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_111176_hotel.SimpleAdd</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SimpleAdd</name>
+        <script><![CDATA[ // The first line creates a variable called SimpleADD and executes the class.create() function, This starts the definition of the object
+
+var SimpleAdd = Class.create();
+
+// Its where the prototype is edited in order to make the class actuall do some thing
+
+SimpleAdd.prototype = {
+	// Initialize is automataically called whe n object is created 
+	
+    initialize: function(n) {
+		gs.info('Creating new object');
+		this.number = n-0 || 0;
+    },
+	
+	increment : function(){
+	
+		this.number++;
+		gs.info(this.number);
+		return this;
+		
+		
+		
+	},
+	
+	
+	
+
+    type: 'SimpleAdd'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-27 05:02:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7da09770db313200bb8f711ebf96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SimpleAdd</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_script_include_7da09770db313200bb8f711ebf96195b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-27 05:02:15</sys_updated_on>
+    </sys_script_include>
+</record_update>

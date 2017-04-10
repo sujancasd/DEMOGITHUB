@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Work notes for maintainece task</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[current.work_notes = "Reply from:"  + email.origemail + "\n\n" + email.body_text;
+current.update();]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-05 10:20:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>edcf6efbdbbd7200bb8f711ebf96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work notes for maintainece task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sysevent_in_email_action_edcf6efbdbbd7200bb8f711ebf96195d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-05 10:20:18</sys_updated_on>
+        <table>x_111176_hotel_maintainence</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

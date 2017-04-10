@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_111176_hotel_maintainence</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Send to CHS Web Service</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[try { 
+ var s = new sn_ws.SOAPMessageV2('x_111176_hotel.CHS SOAP', 'create');
+ //override authentication profile 
+ //authentication type ='basic'
+ //r.setAuthentication(authentication type,profile name);
+gs.addInfoMessage('Entered into the webservice');
+gs.info('Triggering the chs Webservice');
+ s.setStringParameter('number', current.number.getDisplayValue());
+gs.info('Maintainece number is' + current.number.getDisplayValue());
+ s.setStringParameter('room', current.room.getDisplayValue());
+gs.info('Maintainece room is' + current.room.getDisplayValue());
+ s.setStringParameter('description', current.description);
+gs.info('Maintainece description is' + current.description);
+  var response = s.execute();
+ gs.info('Response is '+ response );
+ var responseBody = response.getBody();
+  gs.info('ResponseBody is '+ responseBody );
+ var status = response.getStatusCode();
+gs.info('status is '+ status );
+ var xmlDoc = new XMLDocument2();
+xmlDoc.parseXML(responseBody);
+if(status == 200)
+{
+//200 is sucess
+current.correlation_id = xmlDoc.getNodeText("//data");
+current.work_notes = "Sucessfully sent to external team";
+} else {
+current.work_notes = "Not Sucessfully sent to external team";
+ xmlDoc.getNodeText("//faultstring");
+}
+current.update();
+}
+catch(ex) { 
+ var message = ex.getMessage();
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-09 10:54:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a230cf8ddb82f200bb8f711ebf9619a9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Send to CHS Web Service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_script_a230cf8ddb82f200bb8f711ebf9619a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-09 12:39:03</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a230cf8ddb82f200bb8f711ebf9619a9"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <name>x_111176_hotel_m2m_guests_reservations</name>
+        <owner_condition table="x_111176_hotel_m2m_guests_reservations">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-25 15:54:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f473d7d8dbb13200bb8f711ebf961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_111176_hotel_m2m_guests_reservations</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>ua_table_licensing_config_f473d7d8dbb13200bb8f711ebf961952</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-25 15:54:53</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

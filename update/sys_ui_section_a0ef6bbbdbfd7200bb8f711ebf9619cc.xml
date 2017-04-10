@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="a0ef6bbbdbfd7200bb8f711ebf9619cc" sys_domain="global" table="x_111176_hotel_x_hotel_maintainence_metric" version="3" view="">
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_111176_hotel_x_hotel_maintainence_metric</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-04-05 14:57:51</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0ef6bbbdbfd7200bb8f711ebf9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_111176_hotel_x_hotel_maintainence_metric</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+            <sys_update_name>sys_ui_section_a0ef6bbbdbfd7200bb8f711ebf9619cc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-04-05 14:57:51</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

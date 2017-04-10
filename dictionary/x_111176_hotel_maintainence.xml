@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client" audit="true" extends="task" label="Maintainence" max_length="40" name="x_111176_hotel_maintainence" sizeclass="20" type="collection">
+        <element label="Room" max_length="32" name="room" reference="x_111176_hotel_room" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Sysid" max_length="40" name="sysid" type="string"/>
+    </element>
+</database>

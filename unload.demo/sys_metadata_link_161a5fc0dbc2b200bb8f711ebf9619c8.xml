@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>465c2da80a0a0b1700a767b224ab173a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_portal">
+    <sys_portal action="INSERT_OR_UPDATE">
+        <dropzone>dropzone0</dropzone>
+        <offset>0</offset>
+        <page display_value="">464837320a0a0b1700effdcc590142c0</page>
+        <summary>Clean Login</summary>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2009-05-15 22:19:54</sys_created_on>
+        <sys_id>465c2da80a0a0b1700a767b224ab173a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glide.maint</sys_updated_by>
+        <sys_updated_on>2009-05-15 22:19:54</sys_updated_on>
+    </sys_portal>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-06 08:01:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>161a5fc0dbc2b200bb8f711ebf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 05-15-2009 15:19:54</sys_name>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_metadata_link_161a5fc0dbc2b200bb8f711ebf9619c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-06 08:01:09</sys_updated_on>
+        <tablename>sys_portal</tablename>
+    </sys_metadata_link>
+</record_update>

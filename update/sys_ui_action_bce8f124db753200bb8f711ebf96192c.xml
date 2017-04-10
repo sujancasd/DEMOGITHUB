@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Check-in</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var m2m = new GlideRecord('x_111176_hotel_m2m_guests_reservations');
+m2m.addQuery('reservations', current.sys_id);
+
+m2m.query();
+
+//create the new checkin record 
+
+var gr = new GlideRecord('x_111176_hotel_check_in');
+gr.newRecord();
+gr.date = current.arrival;
+gr.room = current.room;
+gr.comments = 'Checked in from Reservation automatically';
+if(m2m.next())
+	gr.guest = m2m.guest;
+gr.insert();
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-26 03:59:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bce8f124db753200bb8f711ebf96192c</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Check-in</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel" source="x_111176_hotel">6ce855d8db313200bb8f711ebf9619d8</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hotel">6ce855d8db313200bb8f711ebf9619d8</sys_scope>
+        <sys_update_name>sys_ui_action_bce8f124db753200bb8f711ebf96192c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-27 08:54:49</sys_updated_on>
+        <table>x_111176_hotel_reservation</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
